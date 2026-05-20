@@ -294,7 +294,7 @@ strong {
   color: var(--color-primary);
   letter-spacing: -0.02em;
   text-decoration: none;
-  flex-shrink: 0;
+  flex-shrink: 0.5;
 }
 
 .site-header--transparent .site-logo {

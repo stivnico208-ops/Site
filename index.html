@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="it">
 
+<!-- ===== INIZIO INTESTAZIONE DI METADATI (HEAD) ===== -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,25 +17,27 @@
   <link rel="canonical" href="https://example.com/">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="icon" href="" type="image/png">
 </head>
+
+<!-- ===== CORPO DELLA PAGINA (BODY) ===== -->
 
 <body>
 
   <!-- Checkbox per menu mobile -->
+  <!-- ===== AGGANCIO LOGICA MENU MOBILE (CHECKBOX HIDDEN PER TOGGLE) ===== -->
   <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
 
   <!-- ===== HEADER ===== -->
   <header class="site-header site-header--transparent" id="site-header" aria-label="Intestazione sito">
     <div class="container">
-      <a href="/" class="site-logo" aria-label="Puglia Turismo — Torna alla homepage">Puglia</a>
+      <a href="index.html" class="site-logo" aria-label="Puglia Turismo — Torna alla homepage">Puglia</a>
       <nav class="site-nav" aria-label="Navigazione principale">
         <ul class="site-nav__list" role="list">
-          <li><a href="/destinazioni/" class="site-nav__link">Destinazioni</a></li>
-          <li><a href="/esperienze/" class="site-nav__link">Esperienze</a></li>
-          <li><a href="/pianifica/" class="site-nav__link">Pianifica</a></li>
-          <li><a href="/eventi/" class="site-nav__link">Eventi</a></li>
-          <li><a href="/magazine/" class="site-nav__link">Magazine</a></li>
-          <li><a href="/contatti/" class="site-nav__link">Contatti</a></li>
+          <li><a href="destinazioni/index.html" class="site-nav__link">Destinazioni</a></li>
+          <li><a href="esperienze/index.html" class="site-nav__link">Esperienze</a></li>
+          <li><a href="pianifica/index.html" class="site-nav__link">Pianifica</a></li>
+          <li><a href="contatti/index.html" class="site-nav__link">Contatti</a></li>
         </ul>
       </nav>
       <label for="nav-toggle" class="nav-toggle-label" aria-label="Apri/chiudi menu di navigazione">
@@ -45,23 +49,23 @@
   </header>
 
   <!-- Menu mobile overlay -->
+  <!-- ===== NAVIGAZIONE COLLASSABILE PER DISPOSITIVI MOBILE (MOBILE NAV OVERLAY) ===== -->
   <nav class="mobile-nav" aria-label="Menu mobile">
     <ul class="mobile-nav__list" role="list">
-      <li><a href="/destinazioni/" class="mobile-nav__link">Destinazioni</a></li>
-      <li><a href="/esperienze/" class="mobile-nav__link">Esperienze</a></li>
-      <li><a href="/pianifica/" class="mobile-nav__link">Pianifica</a></li>
-      <li><a href="/eventi/" class="mobile-nav__link">Eventi</a></li>
-      <li><a href="/magazine/" class="mobile-nav__link">Magazine</a></li>
-      <li><a href="/contatti/" class="mobile-nav__link">Contatti</a></li>
+      <li><a href="destinazioni/index.html" class="mobile-nav__link">Destinazioni</a></li>
+      <li><a href="esperienze/index.html" class="mobile-nav__link">Esperienze</a></li>
+      <li><a href="pianifica/index.html" class="mobile-nav__link">Pianifica</a></li>
+      <li><a href="contatti/index.html" class="mobile-nav__link">Contatti</a></li>
     </ul>
   </nav>
 
+  <!-- ===== CONTENUTO PRINCIPALE DELLA PAGINA (MAIN CONTENT) ===== -->
   <main id="main-content">
 
     <!-- ===== HERO ===== -->
     <section class="hero" aria-labelledby="hero-title">
       <!-- Inserire percorso immagine -->
-      <img src="assets\img\gianluca-carenza-COKf-QXCC7I-unsplash.jpg" alt="Panorama della puglia rurale" width="4349"
+      <img src="assets/img/gianluca-carenza-COKf-QXCC7I-unsplash.jpg" alt="Panorama della puglia rurale" width="4349"
         height="2903" loading="eager" fetchpriority="high" class="hero__img">
       <div class="hero__overlay"></div>
       <div class="hero__gradient-decor"></div>
@@ -70,17 +74,17 @@
         <p class="hero__subtitle">Scopri il mare, i borghi, la gastronomia e la storia della regione più autentica del
           Mediterraneo.</p>
         <div class="hero__actions">
-          <a href="/destinazioni/" class="btn btn--primary">Scopri la tua Puglia</a>
-          <a href="/pianifica/" class="btn btn--ghost">Pianifica il viaggio</a>
+          <a href="destinazioni/index.html" class="btn btn--primary">Scopri la tua Puglia</a>
+          <a href="pianifica/index.html" class="btn btn--ghost">Pianifica il viaggio</a>
         </div>
         <div class="hero__pills">
-          <a href="/esperienze/mare-e-spiagge/" class="pill">
+          <a href="esperienze/mare-e-spiagge/index.html" class="pill">
             <span class="material-symbols-outlined">anchor</span> Mare
           </a>
-          <a href="/esperienze/arte-e-cultura/" class="pill">
+          <a href="esperienze/arte-e-cultura/index.html" class="pill">
             <span class="material-symbols-outlined">temple_buddhist</span> Cultura
           </a>
-          <a href="/esperienze/gastronomia/" class="pill">
+          <a href="esperienze/gastronomia/index.html" class="pill">
             <span class="material-symbols-outlined">chef_hat</span> Gastronomia
           </a>
         </div>
@@ -95,7 +99,7 @@
           <p class="section__subtitle">Sei province, infinite sorprese.</p>
           <div class="divider" aria-hidden="true"></div>
         </header>
-        <div class="areas-grid">
+        <div class="areas-grid slider-track">
 
           <!-- Card 1: Gargano e Foggia -->
           <article class="area-card">
@@ -107,7 +111,7 @@
               <h3 class="area-card__title">Gargano e Foggia</h3>
               <p class="area-card__desc">Lo sperone d'Italia tra scogliere bianche, Foresta Umbra e le mistiche Isole
                 Tremiti.</p>
-              <a href="/destinazioni/gargano/" class="area-card__link">Esplora →</a>
+              <a href="destinazioni/gargano/index.html" class="area-card__link">Esplora →</a>
             </div>
           </article>
 
@@ -120,7 +124,7 @@
               <h3 class="area-card__title">Bari e Città Metropolitana</h3>
               <p class="area-card__desc">Il cuore pulsante della Puglia: trulli, grotte di Castellana, Polignano a Mare
                 e la focaccia barese.</p>
-              <a href="/destinazioni/bari/" class="area-card__link">Esplora →</a>
+              <a href="destinazioni/bari/index.html" class="area-card__link">Esplora →</a>
             </div>
           </article>
 
@@ -132,7 +136,7 @@
             <div class="area-card__body">
               <h3 class="area-card__title">BAT — Barletta-Andria-Trani</h3>
               <p class="area-card__desc">Castel del Monte, la Burrata di Andria e la Cattedrale di Trani sul mare.</p>
-              <a href="/destinazioni/bat/" class="area-card__link">Esplora →</a>
+              <a href="destinazioni/bat/index.html" class="area-card__link">Esplora →</a>
             </div>
           </article>
 
@@ -146,7 +150,7 @@
               <h3 class="area-card__title">Taranto e Costa Ionica</h3>
               <p class="area-card__desc">La città dei due mari: Magna Grecia, gravine, ceramica di Grottaglie e le cozze
                 del Mar Piccolo.</p>
-              <a href="/destinazioni/taranto/" class="area-card__link">Esplora →</a>
+              <a href="destinazioni/taranto/index.html" class="area-card__link">Esplora →</a>
             </div>
           </article>
 
@@ -159,7 +163,7 @@
               <h3 class="area-card__title">Brindisi e Costa Adriatica Sud</h3>
               <p class="area-card__desc">Ostuni la Città Bianca, la Riserva di Torre Guaceto, masserie e la Via Appia
                 che finisce sul mare.</p>
-              <a href="/destinazioni/brindisi/" class="area-card__link">Esplora →</a>
+              <a href="destinazioni/brindisi/index.html" class="area-card__link">Esplora →</a>
             </div>
           </article>
 
@@ -173,7 +177,7 @@
               <h3 class="area-card__title">Salento — Lecce e dintorni</h3>
               <p class="area-card__desc">Il barocco leccese, le Maldive del Salento, la Notte della Taranta e due mari
                 da vivere.</p>
-              <a href="/destinazioni/salento/" class="area-card__link">Esplora →</a>
+              <a href="destinazioni/salento/index.html" class="area-card__link">Esplora →</a>
             </div>
           </article>
 
@@ -189,7 +193,7 @@
           <p class="section__subtitle">La Puglia ha un'esperienza per ogni desiderio.</p>
           <div class="divider" aria-hidden="true"></div>
         </header>
-        <div class="exp-grid">
+        <div class="exp-grid slider-track">
 
           <!-- Mare e spiagge -->
           <article class="exp-card exp-card--icon">
@@ -205,7 +209,7 @@
               <h3 class="exp-card__title">Mare e Spiagge</h3>
               <p class="exp-card__desc">Dal Gargano al Salento: centinaia di chilometri di costa adriatica e ionica tra
                 spiagge di sabbia bianca e calette selvagge.</p>
-              <a href="/esperienze/mare-e-spiagge/" class="exp-card__link">Scopri di più →</a>
+              <a href="esperienze/mare-e-spiagge/index.html" class="exp-card__link">Scopri di più →</a>
             </div>
           </article>
 
@@ -223,7 +227,7 @@
               <h3 class="exp-card__title">Borghi e Storia</h3>
               <p class="exp-card__desc">Trulli di Alberobello, barocco leccese, centri storici bianchi e castelli
                 federiciani: la storia si tocca con mano.</p>
-              <a href="/esperienze/borghi-e-storia/" class="exp-card__link">Scopri di più →</a>
+              <a href="esperienze/borghi-e-storia/index.html" class="exp-card__link">Scopri di più →</a>
             </div>
           </article>
 
@@ -240,7 +244,7 @@
               <h3 class="exp-card__title">Gastronomia</h3>
               <p class="exp-card__desc">Orecchiette, burrata, focaccia barese, pasticciotto leccese e vini straordinari
                 come il Primitivo di Manduria.</p>
-              <a href="/esperienze/gastronomia/" class="exp-card__link">Scopri di più →</a>
+              <a href="esperienze/gastronomia/index.html" class="exp-card__link">Scopri di più →</a>
             </div>
           </article>
 
@@ -257,7 +261,7 @@
               <h3 class="exp-card__title">Natura e Trekking</h3>
               <p class="exp-card__desc">Foresta Umbra, Parco del Gargano, Gravina di Laterza, Ciclovia dell'Acquedotto
                 Pugliese e riserve marine protette.</p>
-              <a href="/esperienze/natura-e-trekking/" class="exp-card__link">Scopri di più →</a>
+              <a href="esperienze/natura-e-trekking/index.html" class="exp-card__link">Scopri di più →</a>
             </div>
           </article>
 
@@ -275,7 +279,7 @@
               <h3 class="exp-card__title">Arte e Cultura</h3>
               <p class="exp-card__desc">MaRTA di Taranto, Basilica di Santa Croce a Lecce, Grotta della Poesia a Roca
                 Vecchia e 4 siti UNESCO.</p>
-              <a href="/esperienze/arte-e-cultura/" class="exp-card__link">Scopri di più →</a>
+              <a href="esperienze/arte-e-cultura/index.html" class="exp-card__link">Scopri di più →</a>
             </div>
           </article>
 
@@ -293,7 +297,7 @@
               <h3 class="exp-card__title">Benessere</h3>
               <p class="exp-card__desc">Masserie di lusso, terme marine, thalassoterapia e il ritmo lento del Sud: la
                 Puglia cura corpo e anima.</p>
-              <a href="/esperienze/benessere/" class="exp-card__link">Scopri di più →</a>
+              <a href="esperienze/benessere/index.html" class="exp-card__link">Scopri di più →</a>
             </div>
           </article>
 
@@ -308,7 +312,7 @@
           <h2 class="section__title" id="eventi-title">In Puglia in questo momento</h2>
           <div class="divider" aria-hidden="true"></div>
         </header>
-        <div class="events-compact">
+        <div class="events-compact slider-track">
 
           <article class="event-compact-card">
             <div class="event-compact-card__dot" aria-hidden="true"></div>
@@ -316,7 +320,8 @@
               <p class="event-compact-card__name">Notte della Taranta</p>
               <p class="event-compact-card__meta">Agosto · Melpignano (Lecce)</p>
             </div>
-            <a href="/eventi/" class="event-compact-card__link" aria-label="Dettagli Notte della Taranta">Dettagli →</a>
+            <a href="esperienze/index.html#eventi" class="event-compact-card__link"
+              aria-label="Dettagli Notte della Taranta">Dettagli →</a>
           </article>
 
           <article class="event-compact-card">
@@ -325,7 +330,7 @@
               <p class="event-compact-card__name">Festival della Valle d'Itria</p>
               <p class="event-compact-card__meta">Luglio · Martina Franca</p>
             </div>
-            <a href="/eventi/" class="event-compact-card__link"
+            <a href="esperienze/index.html#eventi" class="event-compact-card__link"
               aria-label="Dettagli Festival della Valle d'Itria">Dettagli →</a>
           </article>
 
@@ -335,7 +340,8 @@
               <p class="event-compact-card__name">Disfida di Barletta</p>
               <p class="event-compact-card__meta">1–14 settembre · Barletta</p>
             </div>
-            <a href="/eventi/" class="event-compact-card__link" aria-label="Dettagli Disfida di Barletta">Dettagli →</a>
+            <a href="esperienze/index.html#eventi" class="event-compact-card__link"
+              aria-label="Dettagli Disfida di Barletta">Dettagli →</a>
           </article>
 
           <article class="event-compact-card">
@@ -344,8 +350,8 @@
               <p class="event-compact-card__name">Carnevale di Putignano</p>
               <p class="event-compact-card__meta">Gennaio–Febbraio · Putignano</p>
             </div>
-            <a href="/eventi/" class="event-compact-card__link" aria-label="Dettagli Carnevale di Putignano">Dettagli
-              →</a>
+            <a href="esperienze/index.html#eventi" class="event-compact-card__link"
+              aria-label="Dettagli Carnevale di Putignano">Dettagli →</a>
           </article>
 
           <article class="event-compact-card">
@@ -354,13 +360,13 @@
               <p class="event-compact-card__name">Red Bull Cliff Diving</p>
               <p class="event-compact-card__meta">Settembre · Polignano a Mare</p>
             </div>
-            <a href="/eventi/" class="event-compact-card__link" aria-label="Dettagli Red Bull Cliff Diving">Dettagli
-              →</a>
+            <a href="esperienze/index.html#eventi" class="event-compact-card__link"
+              aria-label="Dettagli Red Bull Cliff Diving">Dettagli →</a>
           </article>
 
         </div>
         <div class="section__cta">
-          <a href="/eventi/" class="section-link">Tutti gli eventi →</a>
+          <a href="esperienze/index.html#eventi" class="section-link">Tutti gli eventi →</a>
         </div>
       </div>
     </section>
@@ -423,7 +429,7 @@
           </article>
         </div>
         <div class="section__cta">
-          <a href="/pianifica/" class="btn btn--ghost-dark">Pianifica ora →</a>
+          <a href="pianifica/index.html" class="btn btn--ghost-dark">Pianifica ora →</a>
         </div>
       </div>
     </section>
@@ -431,6 +437,7 @@
   </main>
 
   <!-- ===== FOOTER ===== -->
+  <!-- ===== PIÈ DI PAGINA CON LINK DI NAVIGAZIONE E INFORMAZIONI GENERALI (FOOTER) ===== -->
   <footer class="site-footer" aria-label="Piè di pagina">
     <div class="container">
       <div class="site-footer__grid">
@@ -439,11 +446,10 @@
         <div class="site-footer__col">
           <h2 class="site-footer__col-title">Link rapidi</h2>
           <ul class="site-footer__list" role="list">
-            <li><a href="/destinazioni/" class="site-footer__link">Destinazioni</a></li>
-            <li><a href="/esperienze/" class="site-footer__link">Esperienze</a></li>
-            <li><a href="/pianifica/" class="site-footer__link">Pianifica</a></li>
-            <li><a href="/eventi/" class="site-footer__link">Eventi</a></li>
-            <li><a href="/magazine/" class="site-footer__link">Magazine</a></li>
+            <li><a href="destinazioni/index.html" class="site-footer__link">Destinazioni</a></li>
+            <li><a href="esperienze/index.html" class="site-footer__link">Esperienze</a></li>
+            <li><a href="pianifica/index.html" class="site-footer__link">Pianifica</a></li>
+            <li><a href="contatti/index.html" class="site-footer__link">Contatti</a></li>
           </ul>
         </div>
 
@@ -451,10 +457,10 @@
         <div class="site-footer__col">
           <h2 class="site-footer__col-title">Informazioni</h2>
           <ul class="site-footer__list" role="list">
-            <li><a href="/contatti/" class="site-footer__link">Contatti</a></li>
-            <li><a href="/contatti/" class="site-footer__link">Accessibilità</a></li>
-            <li><a href="/contatti/" class="site-footer__link">Turismo sostenibile</a></li>
-            <li><a href="/contatti/" class="site-footer__link">Sitemap</a></li>
+            <li><a href="contatti/index.html" class="site-footer__link">Contatti</a></li>
+            <li><a href="contatti/index.html" class="site-footer__link">Accessibilità</a></li>
+            <li><a href="contatti/index.html" class="site-footer__link">Turismo sostenibile</a></li>
+            <li><a href="contatti/index.html" class="site-footer__link">Sitemap</a></li>
           </ul>
         </div>
 
@@ -462,28 +468,30 @@
         <div class="site-footer__col">
           <h2 class="site-footer__col-title">Aree geografiche</h2>
           <ul class="site-footer__list" role="list">
-            <li><a href="/destinazioni/gargano/" class="site-footer__link">Gargano</a></li>
-            <li><a href="/destinazioni/bari/" class="site-footer__link">Bari</a></li>
-            <li><a href="/destinazioni/bat/" class="site-footer__link">BAT</a></li>
-            <li><a href="/destinazioni/taranto/" class="site-footer__link">Taranto</a></li>
-            <li><a href="/destinazioni/brindisi/" class="site-footer__link">Brindisi</a></li>
-            <li><a href="/destinazioni/salento/" class="site-footer__link">Salento</a></li>
+            <li><a href="destinazioni/gargano/index.html" class="site-footer__link">Gargano</a></li>
+            <li><a href="destinazioni/bari/index.html" class="site-footer__link">Bari</a></li>
+            <li><a href="destinazioni/bat/index.html" class="site-footer__link">BAT</a></li>
+            <li><a href="destinazioni/taranto/index.html" class="site-footer__link">Taranto</a></li>
+            <li><a href="destinazioni/brindisi/index.html" class="site-footer__link">Brindisi</a></li>
+            <li><a href="destinazioni/salento/index.html" class="site-footer__link">Salento</a></li>
           </ul>
         </div>
 
         <!-- Colonna 4: Tagline -->
         <div class="site-footer__col">
-          <a href="/" class="site-footer__logo" aria-label="Torna alla homepage">Puglia</a>
+          <a href="index.html" class="site-footer__logo" aria-label="Torna alla homepage">Puglia</a>
           <p class="site-footer__tagline">Puglia. Dove il Sud diventa leggenda.</p>
         </div>
 
       </div>
       <div class="site-footer__bottom">
-        <p>© 2025–2026 Puglia Turismo. Tutti i diritti riservati.</p>
+        <p>© 2025–2026 Vivere la Puglia</p>
       </div>
     </div>
   </footer>
 
+  <!-- ===== CARICAMENTO DELLO SCRIPT COMPORTAMENTALE DEL CAROSELLO (JAVASCRIPT SLIDER) ===== -->
+  <script src="assets/js/slider.js"></script>
 </body>
 
 </html>

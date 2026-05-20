@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="it">
 
-<head>
+<!-- ===== INIZIO INTESTAZIONE DI METADATI (HEAD) ===== -->
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taranto — La Città dei Due Mari | Puglia Turismo</title>
@@ -12,25 +13,26 @@
     content="Scopri Taranto: MaRTA museo di archeologia classica, Primitivo di Manduria, Grottaglie ceramica e la costa ionica.">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://example.com/destinazioni/taranto/">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
 </head>
 
+<!-- ===== CORPO DELLA PAGINA (BODY) ===== -->
 <body>
 
+    <!-- ===== AGGANCIO LOGICA MENU MOBILE (CHECKBOX HIDDEN PER TOGGLE) ===== -->
   <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
 
+    <!-- ===== INTESTAZIONE SITO E NAVIGAZIONE PRINCIPALE (HEADER) ===== -->
   <header class="site-header" aria-label="Intestazione sito">
     <div class="container">
-      <a href="/" class="site-logo">Puglia</a>
+      <a href="../../index.html" class="site-logo">Puglia</a>
       <nav class="site-nav" aria-label="Navigazione principale">
         <ul class="site-nav__list" role="list">
-          <li><a href="/destinazioni/" class="site-nav__link site-nav__link--active">Destinazioni</a></li>
-          <li><a href="/esperienze/" class="site-nav__link">Esperienze</a></li>
-          <li><a href="/pianifica/" class="site-nav__link">Pianifica</a></li>
-          <li><a href="/eventi/" class="site-nav__link">Eventi</a></li>
-          <li><a href="/magazine/" class="site-nav__link">Magazine</a></li>
-          <li><a href="/contatti/" class="site-nav__link">Contatti</a></li>
+          <li><a href="../../destinazioni/index.html" class="site-nav__link site-nav__link--active">Destinazioni</a></li>
+          <li><a href="../../esperienze/index.html" class="site-nav__link">Esperienze</a></li>
+          <li><a href="../../pianifica/index.html" class="site-nav__link">Pianifica</a></li>
+          <li><a href="../../contatti/index.html" class="site-nav__link">Contatti</a></li>
         </ul>
       </nav>
       <label for="nav-toggle" class="nav-toggle-label"
@@ -38,31 +40,24 @@
     </div>
   </header>
 
+    <!-- ===== NAVIGAZIONE COLLASSABILE PER DISPOSITIVI MOBILE (MOBILE NAV OVERLAY) ===== -->
   <nav class="mobile-nav" aria-label="Menu mobile">
     <ul class="mobile-nav__list" role="list">
-      <li><a href="/destinazioni/" class="mobile-nav__link">Destinazioni</a></li>
-      <li><a href="/esperienze/" class="mobile-nav__link">Esperienze</a></li>
-      <li><a href="/pianifica/" class="mobile-nav__link">Pianifica</a></li>
-      <li><a href="/eventi/" class="mobile-nav__link">Eventi</a></li>
-      <li><a href="/magazine/" class="mobile-nav__link">Magazine</a></li>
-      <li><a href="/contatti/" class="mobile-nav__link">Contatti</a></li>
+      <li><a href="../../destinazioni/index.html" class="mobile-nav__link">Destinazioni</a></li>
+      <li><a href="../../esperienze/index.html" class="mobile-nav__link">Esperienze</a></li>
+      <li><a href="../../pianifica/index.html" class="mobile-nav__link">Pianifica</a></li>
+      <li><a href="../../contatti/index.html" class="mobile-nav__link">Contatti</a></li>
     </ul>
   </nav>
 
+    <!-- ===== CONTENUTO PRINCIPALE DELLA PAGINA (MAIN CONTENT) ===== -->
   <main id="main-content">
 
+        <!-- ===== COPERTINA DI BENVENUTO / SEZIONE INIZIALE (HERO) ===== -->
     <section class="hero hero--page" aria-labelledby="page-title">
       <div class="hero__overlay"></div>
       <div class="hero__content">
         <div class="container">
-          <nav class="breadcrumb" aria-label="Percorso di navigazione">
-            <ol class="breadcrumb__list" role="list">
-              <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
-              <li class="breadcrumb__item"><a href="/destinazioni/" class="breadcrumb__link">Destinazioni</a></li>
-              <li class="breadcrumb__item"><span class="breadcrumb__current" aria-current="page">Taranto e Costa
-                  Ionica</span></li>
-            </ol>
-          </nav>
           <h1 class="hero__title" id="page-title">Taranto — La Città dei Due Mari</h1>
         </div>
       </div>
@@ -85,7 +80,7 @@
       <div class="container">
         <h2 class="section__title" id="spiagge-title">Spiagge della Costa Ionica</h2>
         <div class="divider" aria-hidden="true"></div>
-        <div class="beach-list">
+        <div class="beach-list slider-track">
           <article class="beach-card">
             <div class="beach-card__img"><img src=""
                 alt="Spiaggia di San Pietro in Bevagna con acque turchesi e fenicotteri" width="800" height="450"
@@ -133,7 +128,7 @@
       <div class="container">
         <h2 class="section__title" id="borghi-title">Borghi e Città</h2>
         <div class="divider" aria-hidden="true"></div>
-        <div class="borgo-list">
+        <div class="borgo-list slider-track">
           <article class="borgo-card">
             <h3 class="borgo-card__title">Taranto Vecchia</h3>
             <p class="borgo-card__desc">L'isola storica con il Tempio Dorico (VI sec. a.C.), la Cattedrale di San
@@ -205,7 +200,7 @@
       <div class="container">
         <h2 class="section__title" id="gastro-title">Gastronomia Tarantina</h2>
         <div class="divider" aria-hidden="true"></div>
-        <div class="exp-grid">
+        <div class="exp-grid slider-track">
           <article class="exp-card">
             <div class="exp-card__img"><img src="" alt="Cozze tarantine nel tegame alla tarantina" width="800"
                 height="533" loading="lazy"></div>
@@ -355,41 +350,40 @@
 
   </main>
 
+    <!-- ===== PIÈ DI PAGINA CON LINK DI NAVIGAZIONE E INFORMAZIONI GENERALI (FOOTER) ===== -->
   <footer class="site-footer" aria-label="Piè di pagina">
     <div class="container">
       <div class="site-footer__grid">
         <div class="site-footer__col">
           <h2 class="site-footer__col-title">Link rapidi</h2>
           <ul class="site-footer__list" role="list">
-            <li><a href="/destinazioni/" class="site-footer__link">Destinazioni</a></li>
-            <li><a href="/esperienze/" class="site-footer__link">Esperienze</a></li>
-            <li><a href="/pianifica/" class="site-footer__link">Pianifica</a></li>
-            <li><a href="/eventi/" class="site-footer__link">Eventi</a></li>
-            <li><a href="/magazine/" class="site-footer__link">Magazine</a></li>
+            <li><a href="../../destinazioni/index.html" class="site-footer__link">Destinazioni</a></li>
+            <li><a href="../../esperienze/index.html" class="site-footer__link">Esperienze</a></li>
+            <li><a href="../../pianifica/index.html" class="site-footer__link">Pianifica</a></li>
           </ul>
         </div>
         <div class="site-footer__col">
           <h2 class="site-footer__col-title">Informazioni</h2>
           <ul class="site-footer__list" role="list">
-            <li><a href="/contatti/" class="site-footer__link">Contatti</a></li>
-            <li><a href="/contatti/" class="site-footer__link">Accessibilità</a></li>
-            <li><a href="/contatti/" class="site-footer__link">Turismo sostenibile</a></li>
-            <li><a href="/contatti/" class="site-footer__link">Sitemap</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Contatti</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Accessibilità</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Turismo sostenibile</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Sitemap</a></li>
           </ul>
         </div>
         <div class="site-footer__col">
           <h2 class="site-footer__col-title">Aree geografiche</h2>
           <ul class="site-footer__list" role="list">
-            <li><a href="/destinazioni/gargano/" class="site-footer__link">Gargano</a></li>
-            <li><a href="/destinazioni/bari/" class="site-footer__link">Bari</a></li>
-            <li><a href="/destinazioni/bat/" class="site-footer__link">BAT</a></li>
-            <li><a href="/destinazioni/taranto/" class="site-footer__link">Taranto</a></li>
-            <li><a href="/destinazioni/brindisi/" class="site-footer__link">Brindisi</a></li>
-            <li><a href="/destinazioni/salento/" class="site-footer__link">Salento</a></li>
+            <li><a href="../../destinazioni/gargano/index.html" class="site-footer__link">Gargano</a></li>
+            <li><a href="../../destinazioni/bari/index.html" class="site-footer__link">Bari</a></li>
+            <li><a href="../../destinazioni/bat/index.html" class="site-footer__link">BAT</a></li>
+            <li><a href="../../destinazioni/taranto/index.html" class="site-footer__link">Taranto</a></li>
+            <li><a href="../../destinazioni/brindisi/index.html" class="site-footer__link">Brindisi</a></li>
+            <li><a href="../../destinazioni/salento/index.html" class="site-footer__link">Salento</a></li>
           </ul>
         </div>
         <div class="site-footer__col">
-          <a href="/" class="site-footer__logo">Puglia</a>
+          <a href="../../index.html" class="site-footer__logo">Puglia</a>
           <p class="site-footer__tagline">Puglia. Dove il Sud diventa leggenda.</p>
         </div>
       </div>
@@ -399,6 +393,8 @@
     </div>
   </footer>
 
+    <!-- ===== CARICAMENTO DELLO SCRIPT COMPORTAMENTALE DEL CAROSELLO (JAVASCRIPT SLIDER) ===== -->
+  <script src="../../assets/js/slider.js"></script>
 </body>
 
 </html>
