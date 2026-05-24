@@ -2,7 +2,6 @@
  * PUGLIA TURISMO — slider.js
  * 
  * Questo script gestisce la logica di scorrimento orizzontale (carosello/slider) 
- * per le sezioni con card di destinazioni, esperienze ed eventi del sito.
  * Consente di navigare tra le card usando bottoni freccia su schermi desktop,
  * gestendo dinamicamente la visibilità delle frecce in base all'overflow e allo scorrimento.
  */
