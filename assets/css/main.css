@@ -522,6 +522,13 @@ strong {
   background: linear-gradient(135deg, #0077B6 0%, #005080 100%);
 }
 
+.hero--page-green {
+  min-height: 260px;
+  text-align: left;
+  padding-top: var(--header-height);
+  background: linear-gradient(135deg, #9AAA4F 0%, var(--color-secondary)100%);
+}
+
 .hero--page .hero__content {
   max-width: var(--container-max);
   padding-inline: var(--space-3);
